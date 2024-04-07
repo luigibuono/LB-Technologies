@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <title>LB Technologies</title>
+    <link rel="icon" href="./images/LB.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css"/>
+    <!-- AoS (Animate on Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tailwind Library -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="text-gray-800 antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-black">
+
+      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between ">
+        <!-- Nav Left Side -->
+          <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+              <a class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="">
+                <!-- Nav Title -->
+                <img src="./images/LB.png" style="width: 80px; height: 80px; display: inline;">LB Technologies
+              </a>
+              <!-- Hamburger Menu (Mobile) -->
+              <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
+                <!-- Icon -->
+                <i class="text-white fas fa-bars"></i>
+              </button>
+          </div>
+        <!-- Nav Right Side -->
+        <ul class="flex flex-col hidden lg:flex lg:flex-row list-none lg:ml-auto"id="menuItems">
+          <!-- Social Media Button -->
+              <li class="flex items-center">
+                <a class="lg:text-white lg:hover:text-gray-300 text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold "
+                   onClick="scrollToSection('home')">
+                  HOME
+                </a>
+              </li>
+              <!-- Social Media Button -->
+              <li class="flex items-center">
+                <a class="lg:text-white lg:hover:text-gray-300 text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
+                 onClick="scrollToSection('chisiamo')">
+                  CHI SIAMO
+                </a>
+              </li>
+              <!-- Social Media Button -->
+              <li class="flex items-center">
+                <a class="lg:text-white lg:hover:text-gray-300  text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
+                   onClick="scrollToSection('servizi')">
+                  SERVIZI
+                </a>
+              </li>
+               <!-- Social Media Button -->
+               <li class="flex items-center">
+                <a class="lg:text-white lg:hover:text-gray-300  text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
+                  onClick="scrollToSection('lavoraconnoi')">
+                    LAVORA CON NOI
+                </a>
+              </li>
+            <!-- Social Media Button -->
+            <li class="flex items-center">
+              <a class="lg:text-white lg:hover:text-gray-300 text-white  px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
+                onClick="scrollToSection('contattaci')" style="background-color: darkblue; border-radius: 40px;">
+                  CONTATTACI
+              </a>
+            </li>    
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- End of Navigation -->
+
+  <!-- Splash Page -->
+  <main>
+    <div id="home">
+    <div class="relative pt-16 pb-32 flex content-center items-center justify-center first" style="min-height: 75vh;">
+      <!-- Background Image -->
+      <div
+        class="absolute top-0 w-full h-full bg-center bg-cover"
+        style="background:url('./images/richard-horvath-_nWaeTF6qo0-unsplash.jpg')">
+        <!-- Overlay 
+        <span id="blackOverlay" class="w-full h-full absolute opacity-75 bg-black"></span> -->
+      </div>
+      <!-- Text Over Main Background -->
+      <div class="container relative mx-auto">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full lg:w-10/12 px-4 ml-auto mr-auto text-center">
+            <div class="pr-12">
+              <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
+                Crea il futuro digitale della tua azienda con noi
+              </h1>
+              <p class="mt-4 text-2xl font-semibold text-gray-300" data-aos="fade-right" data-aos-delay="1000">
+                La nostra azienda si specializza nello sviluppo di siti web su misura, offrendo un'ampia gamma di servizi che includono la progettazione, lo sviluppo e l'ottimizzazione di siti web. Inoltre, forniamo assistenza completa per siti esistenti, garantendo prestazioni ottimali, sicurezza e aggiornamenti costanti per soddisfare le esigenze in evoluzione dei nostri clienti.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden"
+        style="height: 0px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-300 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+    </div>
+    <!-- End of Splash Page -->
+
+    <!-- Services Section -->
+    <section class="pb-20 bg-gray-300 -mt-24" style="background:url('./images/richard-horvath-_nWaeTF6qo0-unsplash.jpg')">
+      <!-- 3 Card Section -->
+      <div class="container mx-auto px-4">
+        <div class="flex flex-wrap">
+               <!-- Card -->
+               <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-right" data-aos-delay="1200">
+                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <div class="px-4 py-5 flex-auto">
+                    <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-900">
+                      <!-- Icon -->
+                      <i class="fas fa-shield-halved"></i>
+                    </div>
+                    <!-- Text Box -->
+                    <h6 class="text-xl font-semibold">Affidabilità</h6>
+                    <p class="mt-2 mb-4 text-gray-600">
+                      Ci preoccupiamo della sicurezza, delle prestazioni e della soddisfazione dei nostri clienti, garantendo che possano fare affidamento su di noi per le loro esigenze digitali.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!--Card2-->
+              <div class="w-full md:w-4/12 px-4 text-center" data-aos="fade-up" data-aos-delay="1400">
+                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                  <div class="px-4 py-5 flex-auto">
+                    <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-900">
+                      <!-- Icon -->
+                      <i class="fas fa-robot"></i>
+                    </div>
+                    <!-- Text Box -->
+                    <h6 class="text-xl font-semibold">Innovazione</h6>
+                    <p class="mt-2 mb-4 text-gray-600">
+                      Offriamo soluzioni creative e personalizzate per soddisfare le esigenze in continua evoluzione dei nostri clienti, garantendo loro un vantaggio competitivo.
+                    </p>
+                  </div>
+                </div>
+              </div>
+             <!--Card3-->
+             <div class="lg:pt-12 pt-6 w-full md:w-4/12 px-4 text-center" data-aos="fade-right" data-aos-delay="1600">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-8 shadow-lg rounded-lg">
+                <div class="px-4 py-5 flex-auto">
+                  <div class="text-white p-3 text-center inline-flex items-center justify-center w-12 h-12 mb-5 shadow-lg rounded-full bg-blue-900">
+                    <!-- Icon -->
+                    <i class="fas fa-heart"></i>
+                  </div>
+                  <!-- Text Box -->
+                  <h6 class="text-xl font-semibold">Passione</h6>
+                  <p class="mt-2 mb-4 text-gray-600">
+                    Siamo guidati dalla passione nell'offrire soluzioni digitali su misura. Ogni progetto è affrontato con entusiasmo e dedizione per garantire risultati straordinari ai nostri clienti.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+        <!-- Primo blocco -->
+        <div class="flex flex-wrap items-center mt-32 bg-white rounded-lg">
+          <!-- Text Box Container -->
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto mt-8 mb-8" data-aos="zoom-in-right">
+            <!-- Text Box -->
+            <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <!-- Icon -->
+              <i class="fas fa-blog text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              Blog
+            </h3>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              Il nostro approccio alla creazione di siti blog per i nostri clienti si basa sull'eleganza del design, sull'esperienza utente intuitiva e sulla personalizzazione mirata. 
+            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              Utilizzando le ultime tecnologie e pratiche di sviluppo, abbiamo garantito che ogni sito blog sia ottimizzato per i motori di ricerca e pronto a soddisfare le esigenze del pubblico di riferimento.
+            </p>
+            <a
+              href="https://github.com/luigibuono"
+              class="font-bold text-gray-800 mt-8 "
+              style="background-color: darkblue; color: white;  padding: 5px 10px; border-radius: 5px; "
+              > Guarda qui i nostri lavori!
+            </a>
+          </div>
+
+          <!-- Image Cap & Text Card -->
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <!-- Image -->
+              <img
+                alt="blog"
+                src="./images/blog.jpg"
+                class="w-full align-middle rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+
+
+         <!-- Secondo blocco -->
+         <div class="flex flex-wrap items-center mt-32 bg-white rounded-lg" >
+          <!-- Text Box Container -->
+         
+          <!-- Image Cap & Text Card -->
+          <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
+            <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+              <!-- Image -->
+              <img
+                alt="e-commerce"
+                src="./images/e-commerce.jpg"
+                class="w-full align-middle rounded-lg"
+              />
+            </div>
+          </div>
+
+
+          <div class="w-full md:w-5/12 px-4 mr-auto ml-auto mt-8 mb-8" data-aos="zoom-in-right">
+            <!-- Text Box -->
+            <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+              <!-- Icon -->
+              <i class="fas fa-cart-plus text-xl"></i>
+            </div>
+            <h3 class="text-3xl mb-2 font-semibold leading-normal">
+              E-Commerce
+            </h3>
+            <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+              Nel nostro processo di creazione di e-commerce per i clienti, mettiamo al centro l'esperienza dell'utente, la sicurezza delle transazioni e la scalabilità del sistema. 
+            </p>
+            <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+              Dalla progettazione del sito alla configurazione dei pagamenti, lavoriamo a stretto contatto con i clienti per realizzare piattaforme di shopping online che riflettano la loro identità aziendale e soddisfino le esigenze del loro mercato di riferimento. 
+            </p>
+            <a
+              href="https://github.com/luigibuono"
+              class="font-bold text-gray-800 mt-8"
+              style="background-color: darkblue; color: white;  padding: 5px 10px; border-radius: 5px;"
+              >Guarda qui i nostri lavori!
+            </a>
+          </div>
+        </div>
+
+          <!-- Terzo blocco -->
+          <div class="flex flex-wrap items-center mt-32 bg-white rounded-lg">
+            <!-- Text Box Container -->
+            <div class="w-full md:w-5/12 px-4 mr-auto ml-auto mt-8 mb-8" data-aos="zoom-in-right">
+              <!-- Text Box -->
+              <div class="text-gray-600 p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-gray-100">
+                <!-- Icon -->
+                <i class="fas fa-address-card text-xl"></i>
+              </div>
+              <h3 class="text-3xl mb-2 font-semibold leading-normal">
+                Gestionale Aziendale
+              </h3>
+              <p class="text-lg font-light leading-relaxed mt-4 mb-4 text-gray-700">
+                La nostra offerta di gestionali per i clienti è pensata per semplificare e ottimizzare le loro operazioni aziendali. Grazie a soluzioni personalizzate e intuitive, aiutiamo i clienti a gestire inventari, ordini, fatturazione e altre attività in modo efficiente e senza intoppi. 
+              <p class="text-lg font-light leading-relaxed mt-0 mb-4 text-gray-700">
+                Con un approccio orientato alle esigenze specifiche di ogni cliente, ci impegniamo a fornire gestionali potenti e flessibili che consentano loro di concentrarsi sullo sviluppo del loro business e sulla soddisfazione dei clienti.
+              </p>
+              <a
+                href="https://github.com/luigibuono"
+                class="font-bold text-gray-800 mt-8"
+                style="background-color: darkblue; color: white;  padding: 5px 10px; border-radius: 5px;"
+                >Guarda qui i nostri lavori!
+              </a>
+            </div>
+  
+            <!-- Image Cap & Text Card -->
+            <div class="w-full md:w-4/12 px-4 mr-auto ml-auto" data-aos="flip-left" data-aos-delay="1000">
+              <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
+                <!-- Image -->
+                <img
+                  alt="gestionale"
+                  src="./images/gestionale.jpg"
+                  class="w-full align-middle rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+  
+
+
+
+      </div>
+    </div> 
+    </section>
+    <!-- End of Services Section -->
+
+    <!-- About Section -->
+    <section class="relative py-20" style="background:url('./images/richard-horvath-_nWaeTF6qo0-unsplash.jpg')">
+      <div id="chisiamo">
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 0px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-white fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <div class="items-center flex flex-wrap">
+          <div class="w-full md:w-4/12 ml-auto mr-auto px-4" data-aos="flip-right" data-aos-delay="1000"> 
+            <!-- Image -->
+            <img
+              alt="azienda"
+              class="max-w-full rounded-lg shadow-lg"
+              src="./images/azienda.jpg"
+            />
+          </div>
+          <!-- Text Box Container-->
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-in-left">
+            <div class="md:pr-12">
+              <div class="text-black p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
+                <!-- Icon -->
+                <i class="fas fa-building text-xl"></i>
+              </div>
+              <!-- Text Box -->
+              <h3 class="text-3xl font-semibold text-white">LB Technologies</h3>
+              <p class="mt-4 text-lg leading-relaxed text-gray-300 font-semibold ">
+                Fondata nel 2024 si distingue per la sua visione innovativa e l'approccio centrato sul cliente. Attraverso l'impiego di tecnologie all'avanguardia e un team altamente qualificato, si propone di rivoluzionare il settore offrendo soluzioni digitali su misura. Con un forte impegno verso l'eccellenza e l'adattabilità alle mutevoli esigenze del mercato, l'azienda si pone come un punto di riferimento nell'ambito della trasformazione digitale e della creazione di valore per i suoi clienti.
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of About Section -->
+
+    <!-- Team Section -->
+    <section class="pt-20 pb-48" style="background:url('./images/richard-horvath-_nWaeTF6qo0-unsplash.jpg')">
+      <!-- Section Container -->
+      <div class="container mx-auto px-4">
+        <!-- Text Box -->
+        <div class="flex flex-wrap justify-center text-center mb-24">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold text-white">Il nostro Team</h2>
+            <p class="text-lg leading-relaxed m-4 text-gray-300 font-semibold">           
+              Il nostro team è composto da professionisti appassionati e competenti, uniti dalla volontà di superare le sfide e raggiungere gli obiettivi aziendali. Condividiamo una cultura collaborativa e orientata ai risultati, impegnandoci costantemente per offrire soluzioni innovative e di qualità ai nostri clienti.
+            </p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap">
+          <!-- Item 
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4" data-aos="fade-in"> -->
+          <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4 mx-auto" data-aos="fade-in">
+            <div class="px-6">
+              <!-- Image -->
+              <img
+                alt="profilo"
+                src="./images/FotoProfilo.jpg"               
+                class="shadow-lg rounded-lg max-w-full mx-auto"
+              />
+              <div class="pt-6 text-center">
+                <h5 class="text-xl font-bold text-white">Luigi Buono</h5>
+                <p class="mt-1 text-sm text-gray-300 uppercase font-semibold">
+                  Founder & Developer
+                </p>
+                <!-- Social Media Buttons -->
+                <div class="mt-6">
+                  <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                   <a href="https://www.linkedin.com/in/luigi-buono-/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                  </button>
+                  <button class="bg-black text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                  <a href="https://github.com/luigibuono" target="_blank"> <i class="fab fa-github"></i></a>
+                  </button>
+                  <button class="bg-green-300 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
+                    <!-- Icon -->
+                  <a href="./images/Cv Luigi Buono.pdf" target="_blank">CV</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+    </section>
+    <!-- End of Team Section -->
+
+    <!-- Contact Section -->
+    <section class="pb-20 relative block bg-gray-900" style="background:url('./images/richard-horvath-_nWaeTF6qo0-unsplash.jpg')">
+      <div id="servizi">
+      <!-- Making Polygon Shape in Background -->
+      <div
+        class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+        style="height: 0px; transform: translateZ(0);"
+      >
+        <svg
+          class="absolute bottom-0 overflow-hidden"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          version="1.1"
+          viewBox="0 0 2560 100"
+          x="0"
+          y="0"
+        >
+          <polygon
+            class="text-gray-900 fill-current"
+            points="2560 0 2560 100 0 100"
+          ></polygon>
+        </svg>
+      </div>
+      <!-- Section Container -->
+      <div class="container mx-auto px-4 lg:pt-24">
+        <!-- Text Box -->
+        <div class="flex flex-wrap text-center justify-center">
+          <div class="w-full lg:w-6/12 px-4">
+            <h2 class="text-4xl font-semibold text-white">I nostri servizi</h2>
+            <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-300 font-semibold">       
+              Offriamo una vasta gamma di servizi personalizzati che spaziano dalla progettazione e sviluppo di siti web alla consulenza strategica in ambito digitale. Attraverso un approccio orientato alle esigenze del cliente, ci impegniamo a fornire soluzioni innovative e di alta qualità che aiutino a raggiungere gli obiettivi aziendali.
+            </p>
+          </div>
+        </div>
+        <!-- Flex Row Container -->
+        <div class="flex flex-wrap mt-12 justify-center">
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 mr-8 text-center" data-aos="fade-in" data-aos-delay="600">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Siti web professionali
+            </h5>
+            <p class="mt-2 mb-4 text-gray-300 font-semibold">
+              Combinano design accattivante e funzionalità avanzate per fornire esperienze online coinvolgenti e efficaci.
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 mr-8 text-center" data-aos="fade-in" data-aos-delay="400">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">
+              Web app personalizzate
+            </h5>
+            <p class="mt-2 mb-4 text-gray-300 font-semibold">            
+              Le nostre web app personalizzate sono progettate su misura per soddisfare le esigenze specifiche dei nostri clienti. 
+            </p>
+          </div>
+          <!-- Item -->
+          <div class="w-full lg:w-3/12 px-4 mr-8 text-center" data-aos="fade-in">
+            <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <!-- Icon -->
+              <i class="fas fa-star text-xl"></i>
+            </div>
+            <!-- Text Box -->
+            <h5 class="text-xl mt-5 font-semibold text-white">Strategie SEO</h5>
+            <p class="mt-2 mb-4 text-gray-300 font-semibold">
+             Attraverso una strategia SEO ben pianificata è possibile attrarre più traffico organico e aumentare la credibilità del sito web agli occhi dei motori di ricerca.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>      
+    </section>
+
+        <!-- LAVORA CON NOI -->
+        <section class="pb-20 relative block bg-gray-900" style="background:url('./images/richard-horvath-_nWaeTF6qo0-unsplash.jpg')">
+          <div id="lavoraconnoi">
+          <!-- Making Polygon Shape in Background -->
+          <div
+            class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+            style="height: 0px; transform: translateZ(0); background-color: white;"
+          >
+            <svg
+              class="absolute bottom-0 overflow-hidden"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none"
+              version="1.1"
+              viewBox="0 0 2560 100"
+              x="0"
+              y="0"
+            >
+              <polygon
+                class="text-gray-900 fill-current"
+                points="2560 0 2560 100 0 100"
+              ></polygon>
+            </svg>
+          </div>
+          <!-- Section Container -->
+          <div class="container mx-auto px-4 lg:pt-24 lg:pb-64"  >
+            <!-- Text Box -->
+            <div class="flex flex-wrap text-center justify-center">
+              <div class="w-full lg:w-6/12 px-4">
+                <h2 class="text-4xl font-semibold text-white">Lavora con noi</h2>
+                <p class="text-lg leading-relaxed mt-4 mb-4 text-gray-300 font-semibold">       
+                  Unisciti al nostro team dinamico e appassionato, dove le sfide incontrano l'innovazione e la collaborazione. Cerchiamo talenti motivati e creativi desiderosi di contribuire al successo dei nostri progetti e alla crescita dell'azienda. Scopri le opportunità di carriera presso di noi e porta il tuo talento al prossimo livello.
+                </p>
+              </div>
+            </div>
+
+          </div>
+        </div> 
+        
+
+    <!-- Contact Form -->
+
+      <!-- Container -->
+      <div class="container mx-auto px-4" data-aos="fade-in">
+        <div class="flex flex-wrap justify-center lg:-mt-64 -mt-48">
+          <div class="w-full lg:w-4/12 px-4">
+            <div class="relative flex flex-col min-w-0 break-words w-full mb-6 shadow-lg rounded-lg bg-black">
+              <div class="flex-auto p-5 lg:p-10">
+                <p class="leading-relaxed mt-1 mb-4 text-gray-300 text-white text-center text-lg">
+                  Compila questo modulo e ti risponderemo entro 24 ore.
+                </p>
+                <!-- Name -->
+                <div class="relative w-full mb-3 mt-8">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2 text-white" for="full-name">
+                    NOME
+                  </label
+                  ><input
+                    type="text"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Inserisci il tuo nome"
+                    style="transition: all 0.15s ease 0s;"
+                  />
+                </div>
+                <!-- Email -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2 text-white" for="email">
+                    EMAIL
+                  </label
+                  ><input
+                    type="email"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="inserisci la tua email"
+                    style="transition: all 0.15s ease 0s;"
+                  />
+                </div>
+                <!-- Message -->
+                <div class="relative w-full mb-3">
+                  <label class="block uppercase text-gray-700 text-xs font-bold mb-2 text-white" for="message">
+                    Messaggio
+                  </label
+                  ><textarea
+                    rows="4"
+                    cols="80"
+                    class="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full"
+                    placeholder="Presentati"
+                  ></textarea>
+                </div>
+                <div class="text-center mt-6">
+                  <button
+                    class="bg-gray-900 text-white active:bg-gray-700 text-sm font-bold uppercase px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1"
+                    type="button"
+                    style="transition: all 0.15s ease 0s; background-color: darkblue;"
+                  >
+                    INVIA
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End of Contact Section -->
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="relative bg-gray-300 pt-8 pb-6 bg-white">
+    <!-- Making Polygon Shape in Background -->
+    <div
+      class="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
+      style="height: 0px; transform: translateZ(0);"
+    >
+      <svg
+        class="absolute bottom-0 overflow-hidden"
+        xmlns="http://www.w3.org/2000/svg"
+        preserveAspectRatio="none"
+        version="1.1"
+        viewBox="0 0 2560 100"
+        x="0"
+        y="0"
+      >
+        <polygon
+          class="text-gray-300 fill-current"
+          points="2560 0 2560 100 0 100"
+        ></polygon>
+      </svg>
+    </div>
+    <!-- Section Container -->
+    <div id="contattaci">
+    <div class="container mx-auto px-4">
+      <!-- Text Box Container -->
+      <div class="flex flex-wrap">
+        <div class="w-full lg:w-6/12 px-4">
+          <h4 class="text-3xl font-semibold">CONTATTACI</h4>
+          <h5 class="text-lg mt-0 mb-2 text-gray-700 font-semibold">
+            Usa Linkedin per contattarci e seguici su tutti gli altri social e non esitare a mandarci un messaggio!
+          </h5>
+          <!-- Social Media Buttons -->
+
+          <div class="mt-6">
+            <a href="https://github.com/luigibuono" target="_blank"><i class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="#" onclick="event.preventDefault()"><i class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="#" onClick="event.preventDefault()"><i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+            <a href="#" onClick="event.preventDefault()"><i class="fab fa-instagram bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
+          </div>
+        </div>
+      <!-- List Container -->
+      <div class="lg:w-6/12 px-4">
+          <div class="flex flex-wrap items-top mb-6">
+            <!-- List 1 -->
+            <div class="lg:w-4/12 px-4 ml-auto">
+              <span class="block uppercase text-black text-md font-bold mb-2">LB Technologies</span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                      onClick="scrollToSection('home')"
+                      style="cursor:pointer"
+                     >HOME</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     onClick="scrollToSection('chisiamo')"
+                     style="cursor:pointer"
+                     >CHI SIAMO</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     onCLick="scrollToSection('servizi')"
+                     style="cursor:pointer"
+                     >SERVIZI</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     onCLick="scrollToSection('lavoraconnoi')"
+                     style="cursor:pointer"
+                     >LAVORA CON NOI</a>
+                </li>
+              </ul>
+            </div>
+            <!-- List 2 -->
+            <div class="lg:w-4/12 px-4 mt-5 footerB2">
+              <span class="block uppercase text-gray-600 text-sm font-semibold mb-2 footerB"></span>
+              <ul class="list-unstyled">
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     >Privacy Policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     >Cookie policy</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     >Cookie setting</a>
+                </li>
+                <li>
+                  <a class="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
+                     >Contatto</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!-- Line Break -->
+      <hr class="my-6 border-gray-400" />
+      <!-- Footer Text -->
+      <div class="flex flex-wrap items-center md:justify-between justify-center">
+        <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+          <div class="text-sm text-gray-600 font-semibold py-1">
+            Copyright © 2024 LB Technologies
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+    <!-- End of Footer Section -->
+    <p id="scrollToTopButton"><i class="fa-solid fa-arrow-up"></i></p>
+</body>
+
+<!-- AoS js-->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script src="script.js"></script>
+
+<!-- Navigation Script -->
+<script src="navScript.js"></script>
+</html>
+<!-- Font awersome -->
+<script src="https://kit.fontawesome.com/04fb5ba3c0.js" crossorigin="anonymous"></script>
+
+<style>
+    .fa-solid {
+   font-size: large;
+   background-color:white;
+   padding: 10px;
+   position: fixed;
+   bottom: 10px;     
+   right: 10px; 
+   cursor: pointer;
+  }
+
+@media(max-width: 667px){
+
+  .pr-12{
+    padding-top: 8rem;
+  }
+}
+
+@media(max-width: 1500px){
+
+.pr-12{
+  padding-top: 2rem;
+}
+}
+
+@media(max-width: 1023px){
+
+.mt-6{
+    margin-bottom: 1rem;
+}
+
+.pr-12{
+  padding-top: 4rem;
+}
+
+#lavoraconnoi{
+  margin-bottom: 20rem;
+}
+
+.footerB{
+margin-top:0rem;
+}
+
+.mt-5{
+  margin-top: 0rem;
+}
+
+}
+
+@media(max-width: 1280px){
+
+.footerB{
+margin-top:2.2rem;
+}
+}
+
+@media(max-width: 360px){
+
+  .ml-auto {
+    margin-left: 0;
+}
+}
+</style>

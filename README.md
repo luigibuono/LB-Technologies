@@ -1,2 +1,1 @@
-# LB-Technologies
-LB Technologies
+# Animated-Template
