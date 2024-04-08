@@ -21,7 +21,7 @@
       <div class="container px-4 mx-auto flex flex-wrap items-center justify-between ">
         <!-- Nav Left Side -->
           <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-              <a class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white" href="">
+              <a class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white title1" href="">
                 <!-- Nav Title -->
                 <img src="./images/LB.png" style="width: 80px; height: 80px; display: inline;">LB Technologies
               </a>
@@ -89,7 +89,7 @@
       <div class="container relative mx-auto">
         <div class="items-center flex flex-wrap">
           <div class="w-full lg:w-10/12 px-4 ml-auto mr-auto text-center">
-            <div class="pr-12">
+            <div class="pr-12" style="padding-right: 0;">
               <h1 class="text-white font-semibold text-5xl" data-aos="fade-up">
                 Crea il futuro digitale della tua azienda con noi
               </h1>
@@ -195,7 +195,7 @@
               Utilizzando le ultime tecnologie e pratiche di sviluppo, abbiamo garantito che ogni sito blog sia ottimizzato per i motori di ricerca e pronto a soddisfare le esigenze del pubblico di riferimento.
             </p>
             <a
-              href="https://github.com/luigibuono"
+              href="https://github.com/luigibuono" target="_blank"
               class="font-bold text-gray-800 mt-8 "
               style="background-color: darkblue; color: white;  padding: 5px 10px; border-radius: 5px; "
               > Guarda qui i nostri lavori!
@@ -249,7 +249,7 @@
               Dalla progettazione del sito alla configurazione dei pagamenti, lavoriamo a stretto contatto con i clienti per realizzare piattaforme di shopping online che riflettano la loro identità aziendale e soddisfino le esigenze del loro mercato di riferimento. 
             </p>
             <a
-              href="https://github.com/luigibuono"
+              href="https://github.com/luigibuono" target="_blank"
               class="font-bold text-gray-800 mt-8"
               style="background-color: darkblue; color: white;  padding: 5px 10px; border-radius: 5px;"
               >Guarda qui i nostri lavori!
@@ -275,7 +275,7 @@
                 Con un approccio orientato alle esigenze specifiche di ogni cliente, ci impegniamo a fornire gestionali potenti e flessibili che consentano loro di concentrarsi sullo sviluppo del loro business e sulla soddisfazione dei clienti.
               </p>
               <a
-                href="https://github.com/luigibuono"
+                href="https://github.com/luigibuono" target="_blank"
                 class="font-bold text-gray-800 mt-8"
                 style="background-color: darkblue; color: white;  padding: 5px 10px; border-radius: 5px;"
                 >Guarda qui i nostri lavori!
@@ -338,8 +338,8 @@
             />
           </div>
           <!-- Text Box Container-->
-          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-in-left">
-            <div class="md:pr-12">
+          <div class="w-full md:w-5/12 ml-auto mr-auto px-4" data-aos="zoom-in-right">
+            <div class="md:pr-12" style="margin-top: 2rem;">
               <div class="text-black p-3 text-center inline-flex items-center justify-center w-16 h-16 mb-6 shadow-lg rounded-full bg-white">
                 <!-- Icon -->
                 <i class="fas fa-building text-xl"></i>
@@ -448,13 +448,13 @@
         <!-- Flex Row Container -->
         <div class="flex flex-wrap mt-12 justify-center">
           <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 mr-8 text-center" data-aos="fade-in" data-aos-delay="600">
+          <div class="w-full lg:w-3/12 px-4 mr-8 text-center"style="margin-right: 0px;" data-aos="fade-in" data-aos-delay="600">
             <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <!-- Icon -->
               <i class="fas fa-star text-xl"></i>
             </div>
             <!-- Text Box -->
-            <h5 class="text-xl mt-5 font-semibold text-white">
+            <h5 class="text-xl mt-5 font-semibold text-white" >
               Siti web professionali
             </h5>
             <p class="mt-2 mb-4 text-gray-300 font-semibold">
@@ -462,7 +462,7 @@
             </p>
           </div>
           <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 mr-8 text-center" data-aos="fade-in" data-aos-delay="400">
+          <div class="w-full lg:w-3/12 px-4 mr-8 text-center" style="margin-right: 0px;" data-aos="fade-in" data-aos-delay="400">
             <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <!-- Icon -->
               <i class="fas fa-star text-xl"></i>
@@ -476,7 +476,7 @@
             </p>
           </div>
           <!-- Item -->
-          <div class="w-full lg:w-3/12 px-4 mr-8 text-center" data-aos="fade-in">
+          <div class="w-full lg:w-3/12 px-4 mr-8 text-center" style="margin-right: 0px;" data-aos="fade-in">
             <div class="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
               <!-- Icon -->
               <i class="fas fa-star text-xl"></i>
@@ -755,7 +755,7 @@
 }
 
 .pr-12{
-  padding-top: 4rem;
+  padding-top: 6rem;
 }
 
 #lavoraconnoi{
@@ -784,5 +784,13 @@ margin-top:2.2rem;
   .ml-auto {
     margin-left: 0;
 }
+}
+
+@media(max-width: 347px){
+
+  .title1{
+    font-size: 0.8rem;
+  }
+
 }
 </style>
