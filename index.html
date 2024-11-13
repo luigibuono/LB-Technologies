@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="it-IT">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -7,10 +7,14 @@
     <title>LB Digital Hub -Soluzioni Innovative per la Tecnologia e l'Automazione</title>
     <meta name="description" content="LB Digital Hub offre soluzioni avanzate per l'automazione e l'innovazione tecnologica. Scopri come possiamo trasformare le tue idee in realtà." />
     <meta name="keywords" content="LB Digital Hub, soluzioni tecnologiche, automazione, innovazione, tecnologia, sviluppo software, consulenza IT" />
-    <link rel="icon" href="./images/LB.png" type="image/x-icon">
-    <link rel="icon" href="https://lbdigitalhub.netlify.app/images/LB.png" type="image/png">
-    <link rel="icon" href="https://lbdigitalhub.netlify.app/images/LB.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="https://lbdigitalhub.netlify.app/images/LB.png">
+   <!-- Favicon -->
+   <link rel="icon" href="https://lbdigitalhub.netlify.app/images/favicon.ico" type="image/x-icon">
+   <link rel="icon" href="https://lbdigitalhub.netlify.app/images/favicon-16x16.png" type="image/png" sizes="16x16">
+   <link rel="icon" href="https://lbdigitalhub.netlify.app/images/favicon-32x32.png" type="image/png" sizes="32x32">
+   <link rel="apple-touch-icon" href="https://lbdigitalhub.netlify.app/images/apple-touch-icon.png">
+
+   <!-- Manifest -->
+   <link rel="manifest" href="https://lbdigitalhub.netlify.app/images/manifest.json">
 
     <script type="application/ld+json">
       {
@@ -42,59 +46,60 @@
 
   <nav class="fixed top-0 z-50 w-full flex flex-wrap items-center justify-between px-2 py-3 navbar-expand-lg bg-black">
 
-      <div class="container px-4 mx-auto flex flex-wrap items-center justify-between ">
-        <!-- Nav Left Side -->
-          <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
-              <a class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white title1" href="">
-                <!-- Nav Title -->
-                <img src="./images/LB.png" style="width: 80px; height: 80px; display: inline;">LB Digital Hub
-              </a>
-              <!-- Hamburger Menu (Mobile) -->
-              <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')">
-                <!-- Icon -->
-                <i class="text-white fas fa-bars"></i>
-              </button>
-          </div>
-        <!-- Nav Right Side -->
-        <ul class="flex flex-col hidden lg:flex lg:flex-row list-none lg:ml-auto"id="menuItems">
-          <!-- Social Media Button -->
-              <li class="flex items-center">
-                <a class="lg:text-white lg:hover:text-gray-300 text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold "
-                   onClick="scrollToSection('home')">
-                  HOME
-                </a>
-              </li>
-              <!-- Social Media Button -->
-              <li class="flex items-center">
-                <a class="lg:text-white lg:hover:text-gray-300 text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
-                 onClick="scrollToSection('chisiamo')">
-                  CHI SIAMO
-                </a>
-              </li>
-              <!-- Social Media Button -->
-              <li class="flex items-center">
-                <a class="lg:text-white lg:hover:text-gray-300  text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
-                   onClick="scrollToSection('servizi')">
-                  SERVIZI
-                </a>
-              </li>
-               <!-- Social Media Button -->
-               <li class="flex items-center">
-                <a class="lg:text-white lg:hover:text-gray-300  text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
-                  onClick="scrollToSection('lavoraconnoi')">
-                    LAVORA CON NOI
-                </a>
-              </li>
-            <!-- Social Media Button -->
-            <li class="flex items-center">
-              <a class="lg:text-white lg:hover:text-gray-300 text-white  px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
-                onClick="scrollToSection('contattaci')" style="background-color: darkblue; border-radius: 40px;">
-                  CONTATTACI
-              </a>
-            </li>    
-        </ul>
+    <div class="container px-4 mx-auto flex flex-wrap items-center justify-between">
+      <!-- Nav Left Side -->
+      <div class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start">
+        <a class="text-lg font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase text-white title1" href="#">
+          <!-- Nav Title -->
+          <img src="./images/LB.png" alt="Logo di LB Digital Hub" style="width: 80px; height: 80px; display: inline;"> LB Digital Hub
+        </a>
+        <!-- Hamburger Menu (Mobile) -->
+        <button class="cursor-pointer text-xl leading-none px-3 py-1 border border-solid border-transparent rounded bg-transparent block lg:hidden outline-none focus:outline-none" type="button" onclick="toggleNavbar('example-collapse-navbar')" aria-label="Apri menu di navigazione">
+          <!-- Icon -->
+          <i class="text-white fas fa-bars"></i>
+        </button>
       </div>
+    
+      <!-- Nav Right Side -->
+      <ul class="flex flex-col hidden lg:flex lg:flex-row list-none lg:ml-auto" id="menuItems">
+        <!-- Home Button -->
+        <li class="flex items-center">
+          <a class="lg:text-white lg:hover:text-gray-300 text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
+             onClick="scrollToSection('home')">
+            HOME
+          </a>
+        </li>
+        <!-- Chi Siamo Button -->
+        <li class="flex items-center">
+          <a class="lg:text-white lg:hover:text-gray-300 text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
+             onClick="scrollToSection('chisiamo')">
+            CHI SIAMO
+          </a>
+        </li>
+        <!-- Servizi Button -->
+        <li class="flex items-center">
+          <a class="lg:text-white lg:hover:text-gray-300 text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
+             onClick="scrollToSection('servizi')">
+            SERVIZI
+          </a>
+        </li>
+        <!-- Lavora Con Noi Button -->
+        <li class="flex items-center">
+          <a class="lg:text-white lg:hover:text-gray-300 text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
+             onClick="scrollToSection('lavoraconnoi')">
+            LAVORA CON NOI
+          </a>
+        </li>
+        <!-- Contattaci Button -->
+        <li class="flex items-center">
+          <a class="lg:text-white lg:hover:text-gray-300 text-white px-3 py-4 lg:py-2 mr-4 flex items-center text-md uppercase font-bold"
+             onClick="scrollToSection('contattaci')" style="background-color: darkblue; border-radius: 40px;">
+            CONTATTACI
+          </a>
+        </li>
+      </ul>
     </div>
+    
   </nav>
   <!-- End of Navigation -->
 
@@ -219,11 +224,16 @@
               Utilizzando le ultime tecnologie e pratiche di sviluppo, abbiamo garantito che ogni sito blog sia ottimizzato per i motori di ricerca e pronto a soddisfare le esigenze del pubblico di riferimento.
             </p>
             <a
-              href="https://github.com/luigibuono" target="_blank"
-              class="font-bold text-gray-800 mt-8 "
-              style="background-color: darkblue; color: white;  padding: 5px 10px; border-radius: 5px; "
-              > Guarda qui i nostri lavori!
-            </a>
+            href="https://github.com/luigibuono" 
+            target="_blank"
+            class="font-bold text-gray-800 mt-8"
+            style="background-color: darkblue; color: white; padding: 5px 10px; border-radius: 5px;"
+            title="Visita il nostro profilo GitHub per scoprire i progetti e i lavori recenti"
+            aria-label="Guarda i progetti su GitHub"
+          >
+            Guarda qui i nostri lavori!
+          </a>
+          
           </div>
 
           <!-- Image Cap & Text Card -->
@@ -273,11 +283,15 @@
               Dalla progettazione del sito alla configurazione dei pagamenti, lavoriamo a stretto contatto con i clienti per realizzare piattaforme di shopping online che riflettano la loro identità aziendale e soddisfino le esigenze del loro mercato di riferimento. 
             </p>
             <a
-              href="https://github.com/luigibuono" target="_blank"
-              class="font-bold text-gray-800 mt-8"
-              style="background-color: darkblue; color: white;  padding: 5px 10px; border-radius: 5px;"
-              >Guarda qui i nostri lavori!
-            </a>
+            href="https://github.com/luigibuono" 
+            target="_blank"
+            class="font-bold text-gray-800 mt-8"
+            style="background-color: darkblue; color: white; padding: 5px 10px; border-radius: 5px;"
+            aria-label="Visita il nostro profilo GitHub per vedere i progetti"
+          >
+            Guarda qui i nostri lavori!
+          </a>
+          
           </div>
         </div>
 
@@ -300,10 +314,15 @@
                 Ogni gestionale è progettato su misura per rispondere alle specifiche esigenze dei clienti, permettendo loro di migliorare l'efficienza operativa e concentrarsi sullo sviluppo del loro business.
             </p>
             <a
-                href="https://github.com/luigibuono" target="_blank"
-                class="font-bold text-gray-800 mt-8"
-                style="background-color: darkblue; color: white;  padding: 5px 10px; border-radius: 5px;"
-            >Guarda qui i nostri lavori!</a>
+            href="https://github.com/luigibuono" 
+            target="_blank"
+            class="font-bold text-gray-800 mt-8"
+            style="background-color: darkblue; color: white; padding: 5px 10px; border-radius: 5px;"
+            aria-label="Visita il nostro profilo GitHub per vedere i progetti"
+          >
+            Guarda qui i nostri lavori!
+          </a>
+          
         </div>
 
         <!-- Image Cap & Text Card -->
@@ -311,7 +330,7 @@
             <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg bg-orange-500">
                 <!-- Image -->
                 <img
-                    alt="Screenshot del software gestionale aziendale personalizzato"
+                    alt="Software gestionale aziendale personalizzato"
                     src="./images/gestionale.jpg"
                     class="w-full align-middle rounded-lg"
                 />
@@ -410,19 +429,20 @@
                 </p>
                 <!-- Social Media Buttons -->
                 <div class="mt-6">
-                  <button class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                   <a href="https://www.linkedin.com/in/luigi-buono-/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                  </button>
-                  <button class="bg-black text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                  <a href="https://github.com/luigibuono" target="_blank"> <i class="fab fa-github"></i></a>
-                  </button>
-                  <button class="bg-green-300 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1" type="button">
-                    <!-- Icon -->
-                  <a href="./images/Cv Luigi Buono.pdf" target="_blank">CV</a>
-                  </button>
+                  <a href="https://www.linkedin.com/in/luigi-buono-/" target="_blank" class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 flex items-center justify-center">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                
+                  <a href="https://github.com/luigibuono" target="_blank" class="bg-black text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 flex items-center justify-center">
+                    <i class="fab fa-github"></i>
+                  </a>
+                
+                  <a href="./images/Cv Luigi Buono.pdf" target="_blank" class="bg-green-300 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 flex items-center justify-center">
+                    CV
+                  </a>
                 </div>
+                
+
               </div>
             </div>
           </div>
