@@ -2,9 +2,9 @@
 <html lang="it-IT">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="theme-color" content="#000000" />
-    <title>LB Digital Hub -Soluzioni Innovative per la Tecnologia e l'Automazione</title>
+    <title>LB Digital Hub -Soluzioni Innovative per la Tecnologia</title>
     <meta name="description" content="LB Digital Hub offre soluzioni avanzate per l'automazione e l'innovazione tecnologica. Scopri come possiamo trasformare le tue idee in realtà." />
     <meta name="keywords" content="LB Digital Hub, soluzioni tecnologiche, automazione, innovazione, tecnologia, sviluppo software, consulenza IT" />
    <!-- Favicon -->
@@ -428,7 +428,10 @@
                   Founder & Developer
                 </p>
                 <!-- Social Media Buttons -->
-                <div class="mt-6">
+                <div class="mt-6" 
+                style="    display: flex;
+                gap: 20px;
+                justify-content: center;">
                   <a href="https://www.linkedin.com/in/luigi-buono-/" target="_blank" class="bg-blue-600 text-white w-8 h-8 rounded-full outline-none focus:outline-none mr-1 mb-1 flex items-center justify-center">
                     <i class="fab fa-linkedin"></i>
                   </a>
@@ -673,11 +676,20 @@
           <!-- Social Media Buttons -->
 
           <div class="mt-6">
-            <a href="https://github.com/luigibuono" target="_blank"><i class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-            <a href="#" onclick="event.preventDefault()"><i class="fab fa-twitter  bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-            <a href="#" onClick="event.preventDefault()"><i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-            <a href="#" onClick="event.preventDefault()"><i class="fab fa-instagram bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i></a>
-          </div>
+            <a href="https://github.com/luigibuono" target="_blank">
+                <i class="fab fa-github bg-white text-gray-900 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+            </a>
+            <a href="https://twitter.com/luigibuono" target="_blank">
+                <i class="fab fa-twitter bg-white text-blue-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+            </a>
+            <a href="https://www.facebook.com/luigi.buono" target="_blank">
+                <i class="fab fa-facebook-square bg-white text-blue-600 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+            </a>
+            <a href="https://www.instagram.com/luigibuono" target="_blank">
+                <i class="fab fa-instagram bg-white text-pink-400 shadow-lg font-lg p-3 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 inline-block text-center"></i>
+            </a>
+        </div>
+        
         </div>
       <!-- List Container -->
       <div class="lg:w-6/12 px-4">
@@ -835,4 +847,14 @@ margin-top:2.2rem;
   }
 
 }
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    .container {
+        padding: 15px;
+    }
+}
+
 </style>
