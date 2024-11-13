@@ -1,3 +1,3 @@
 User-agent: *
 Disallow:
-https://lb-technologies.netlify.app/sitemap.xml
+https://lbdigitalhub.netlify.app//sitemap.xml
