@@ -5,19 +5,4 @@
         <lastmod>2024-11-13</lastmod>
         <priority>1.0</priority>
     </url>
-    <url>
-        <loc>https://lbdigitalhub.netlify.app/chi-siamo</loc>
-        <lastmod>2024-11-13</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lbdigitalhub.netlify.app/servizi</loc>
-        <lastmod>2024-11-13</lastmod>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://lbdigitalhub.netlify.app/contattaci</loc>
-        <lastmod>2024-11-13</lastmod>
-        <priority>0.8</priority>
-    </url>
 </urlset>
